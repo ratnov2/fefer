@@ -8,6 +8,7 @@ let pobAccommodation = document.querySelectorAll('.pob_accommodation');
 let pr = document.querySelectorAll('.pr');
 let pr_p = document.querySelectorAll('li p');
 let pobAccommodationCards1 = document.querySelectorAll('.pob_accommodation_cards_1');
+let rast = document.querySelectorAll('.rast');
 
 if (window.location.hash == '#hotel') {
   jsNoDisplay[0].style.display = 'flex';
@@ -34,11 +35,21 @@ for (let i = 0; i < 3; i++) {
         for (let i of pobAccommodationCards1) {
           i.classList.add('spisok2');
         }
+
+        for (let i of rast) {
+          i.classList.remove('rast');
+          console.log(i);
+        }
+
+
       } else if (i == 0) {
         jsNoDisplay[j].classList.remove('spisok');
         jsNoDisplay[j].classList.add('proRoader');
         for (let i of pobAccommodationCards1) {
           i.classList.remove('spisok2');
+        }
+        for (let i of rast) {
+          i.classList.add('rast');
         }
       }
     }

@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Lato',sans-serif;
+  font-family: 'Roboto',sans-serif;
 }
 body{
   color:#727BBA;
@@ -285,7 +285,7 @@ border:2px solid black;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 1100px;
   width: 100%;
   min-width: 600px;
 }
@@ -309,12 +309,9 @@ border:2px solid black;
   display: none;
 }
 .pob_accommodation_cards_1{
-  border: 2px solid black;
   display: flex;
   margin-top: 20px;
-  margin-left: 96px;
-  margin-right: auto;
-  width: 100px;
+  margin-left: 20px;  
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
@@ -331,7 +328,7 @@ border:2px solid black;
   justify-content:center;
 }
 .pob_accommodation_cards_1 img{
- width: 100px;
+
  height: 200px;
 }
 .fixed{
@@ -472,6 +469,75 @@ footer{
   width: 260px;
   display: flex;
   justify-content:space-between;
+}
+.rast{
+  max-width: 266px;
+  position: relative;
+  transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 400px;
+  background-color: #f0f0f0;
+}
+.rast:hover{
+  background-color: #ffffff;
+}
+.imgrect{
+  transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
+   position: relative;
+   
+   top:0;
+}
+.imgrect img{
+  max-width: 266px;
+}
+.rast:hover .imgrect{
+  top: -20px;
+  
+}
+.rast:hover .pob_header{
+  top:-70px;
+  opacity: 0;
+}
+.rast:hover{
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.rast .map_nav{
+  position: relative;
+  top: 20px;
+  opacity:0;
+  transition: top 0.5s cubic-bezier(.25, .8, .25, 1),opacity 0.5s cubic-bezier(.25, .8, .25, 1);
+  text-align: center;
+  color:rgba(40, 150, 211, 1);
+  font-size: 15px;
+  margin-top: 20px;
+}
+.rast .pob_header{
+  position: relative;
+  top:0;
+  text-align: center;
+  color: rgba(40, 150, 211, 1);
+  font-size: 30px;
+  transition: top 0.5s ease-in-out,opacity 0.5s ease-in-out;
+}
+.rast .pob_b_header{
+  position: relative;
+  margin: 0 auto;
+  max-width: 160px;
+  opacity: 0;
+   transition:opacity 0.5s cubic-bezier(.25, .8, .25, 1),top 0.5s cubic-bezier(.25, .8, .25, 1);;
+   text-align:center ;
+   color: #6a6a6a;
+   top: 20px;
+}
+
+.rast:hover .pob_b_header, .rast:hover .map_nav{
+  opacity: 1;
+  top: -20px;
+}
+
+
+.jsNoDisplay a{
+  color:black;
 }
 /* -ms-hyphens: auto;
 -webkit-hyphens: auto;
